@@ -3,7 +3,7 @@
 const InProgressList = () => {
     return (
         <div>
-            <h2>hi</h2>
+            <h2></h2>
         </div>
     );
 };

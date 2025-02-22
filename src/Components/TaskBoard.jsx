@@ -1,7 +1,6 @@
 import  { useState } from 'react';
 import ToDoList from './ToDoList';
-import InProgressList from './InProgressList';
-import DoneList from './DoneList';
+
 
 const TaskBoard = () => {
   const [tasks, setTasks] = useState([
@@ -27,8 +26,8 @@ const TaskBoard = () => {
   return (
     <div className="task-board">
       <ToDoList tasks={tasks.filter(task => task.category === 'To-Do')} onDragOver={handleDragOver} onDrop={handleDrop} />
-      <InProgressList tasks={tasks.filter(task => task.category === 'In Progress')} onDragOver={handleDragOver} onDrop={handleDrop} />
-      <DoneList tasks={tasks.filter(task => task.category === 'Done')} onDragOver={handleDragOver} onDrop={handleDrop} />
+      {/* <InProgressList tasks={tasks.filter(task => task.category === 'In Progress')} onDragOver={handleDragOver} onDrop={handleDrop} />
+      <DoneList tasks={tasks.filter(task => task.category === 'Done')} onDragOver={handleDragOver} onDrop={handleDrop} /> */}
     </div>
   );
 };
