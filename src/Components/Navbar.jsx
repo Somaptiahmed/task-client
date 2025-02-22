@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleLogout = () => {
     // Clear user data from context
     setUser(null);
-    navigate("/login"); // Redirect to login page after logout
+    navigate("/"); // Redirect to login page after logout
   };
 
   return (
